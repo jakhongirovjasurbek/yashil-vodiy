@@ -24,15 +24,16 @@
 </head>
 <body>
 <div class="wrap">
-  <p class="langs"><a href="#uz">O'zbekcha</a><a href="#en">English</a><a href="#ru">Русский</a></p>
+  <p class="langs"><a href="#uz">O'zbekcha</a><a href="#en">English</a><a href="#ru">Русский</a><a href="#delete-en">Delete account</a></p>
 
   <section id="uz">
   <h1>Green Valley — Maxfiylik siyosati</h1>
-  <p class="sub">Oxirgi yangilanish: 2026-10-11 · Ilova: <code>uz.yashilvodiy.vodiy3d</code> · Nashriyot: "MAGISTRAL TRANS QURILISH" MCHJ</p>
+  <p class="sub">Oxirgi yangilanish: 2026-10-12 · Ilova: <code>uz.yashilvodiy.vodiy3d</code> · Nashriyot: "MAGISTRAL TRANS QURILISH" MCHJ</p>
 
   <div class="card">
-    <strong>Qisqacha:</strong> o'yin ism, telefon raqami, manzil, elektron pochta, aniq joylashuv, kontaktlar, rasmlar yoki fayllarga tegmaydi.
-    O'yin progressi faqat telefoningizda saqlanadi. O'yinni yaxshilash uchun anonim foydalanish statistikasi va ilova ishdan chiqqanda xato hisoboti yuboriladi. Reklama yo'q.
+    <strong>Qisqacha:</strong> o'yin telefon raqami, manzil, aniq joylashuv, kontaktlar, rasmlar yoki fayllarga tegmaydi.
+    O'yin progressi telefoningizda saqlanadi. O'yinni yaxshilash uchun anonim foydalanish statistikasi va ilova ishdan chiqqanda xato hisoboti yuboriladi. Reklama yo'q.
+    Onlayn o'yin (2.1 versiyadan) ixtiyoriy: faqat "Google bilan kirish" tugmasini bossangiz, hisob identifikatori va o'yin progressi serverda saqlanadi. Kirmasangiz, o'yin to'liq oflayn ishlaydi.
   </div>
 
   <h2>To'planadigan ma'lumotlar</h2>
@@ -45,16 +46,31 @@
   </table>
   <p>Bu ma'lumotlar ismingiz yoki biror hisobingiz bilan bog'lanmaydi.</p>
 
+  <h2>Onlayn o'yin: Google bilan kirish (ixtiyoriy)</h2>
+  <p>Agar o'yindagi "Onlayn" oynasida Google bilan kirsangiz:</p>
+  <table>
+    <tr><th>Ma'lumot</th><th>Nima uchun</th></tr>
+    <tr><td>Hisob identifikatori (Firebase Authentication yaratadi), Google hisobingizning e-pochtasi va ismi (Firebase Authentication'da saqlanadi, o'yinda hech kimga ko'rsatilmaydi)</td><td>Hisobingizga kirish va saqlanishni sizga qaytarish uchun</td></tr>
+    <tr><td>O'yin progressi: pul, ochilgan bosqichlar, yaxshilashlar, haftada terilgan anjirlar</td><td>Bulutda saqlash: telefon almashsa ham o'yin yo'qolmaydi</td></tr>
+    <tr><td>Ochiq vodiy: ferma raqami (masalan "Fermer 4821"), ochilgan bosqichlar va darajalar, vodiy necha foiz yashil, jami topilgan pul va terilgan anjirlar</td><td>Reyting va "qo'shnilar" ro'yxati: boshqa o'yinchilar vodiyingizni ko'rishi mumkin</td></tr>
+    <tr><td>Haftada terilgan anjirlar soni (umumiy hisobga qo'shiladi, kimniki ekani saqlanmaydi)</td><td>Haftalik umumiy maqsad</td></tr>
+  </table>
+  <p>Boshqa o'yinchilar faqat ferma raqami va vodiyingizni ko'radi; ismingiz va e-pochtangiz hech kimga ko'rsatilmaydi.
+  Ma'lumotlar Google Firebase (Firebase Authentication va Cloud Firestore, Google LLC) serverlarida, Yevropa Ittifoqida saqlanadi.</p>
+
   <h2>Ma'lumot kimga boradi</h2>
-  <p>Faqat Google Firebase xizmatlariga (Google Analytics for Firebase va Firebase Crashlytics, Google LLC). Ular ma'lumotni bizning nomimizdan qayta ishlaydi. Ma'lumot boshqa hech kimga berilmaydi,
+  <p>Faqat Google Firebase xizmatlariga (Google Analytics for Firebase, Firebase Crashlytics, Firebase Authentication va Cloud Firestore, Google LLC). Ular ma'lumotni bizning nomimizdan qayta ishlaydi. Ma'lumot boshqa hech kimga berilmaydi,
   sotilmaydi va reklama uchun ishlatilmaydi. Barcha so'rovlar HTTPS orqali shifrlangan holda uzatiladi.</p>
 
   <h2>Bolalar</h2>
   <p>O'yin bolalarga maxsus mo'ljallanmagan. Unda yadro halokati mavzusi bor, shuning uchun 13 yoshdan katta foydalanuvchilarga tavsiya etiladi.
   13 yoshgacha bo'lgan bolalardan ataylab ma'lumot to'planmaydi.</p>
 
-  <h2>Ma'lumotni o'chirish</h2>
-  <p>Qurilmada: Sozlamalar → Ilovalar → Green Valley → Xotirani tozalash. Shunda progress va anonim identifikator o'chadi.
+  <h2 id="delete">Ma'lumotni va hisobni o'chirish</h2>
+  <p><strong>Onlayn hisob:</strong> o'yinda Pauza yonidagi "Onlayn" tugmasi → Hisob → "Hisobni o'chirish". Hisob, bulutdagi saqlanish va ochiq vodiy darhol o'chiriladi; telefondagi o'yin qoladi.
+  Ilovani o'chirib yuborgan bo'lsangiz, <a href="mailto:j.d.jaxongirov@gmail.com">j.d.jaxongirov@gmail.com</a> manziliga Google hisobingiz e-pochtasidan yozing — 30 kun ichida o'chiramiz.
+  Haftalik umumiy anjir soniga qo'shilgan hissa kimniki ekani saqlanmagani uchun u qoladi.</p>
+  <p><strong>Qurilmada:</strong> Sozlamalar → Ilovalar → Green Valley → Xotirani tozalash. Shunda progress va anonim identifikator o'chadi.
   Google Analytics'dagi statistika 2 oydan, xato hisobotlari 90 kundan keyin avtomatik o'chiriladi. Undan oldin o'chirish uchun
   <a href="mailto:j.d.jaxongirov@gmail.com">j.d.jaxongirov@gmail.com</a> manziliga yozing.</p>
 
@@ -66,9 +82,10 @@
 
   <section id="en">
   <h1>Green Valley — Privacy Policy</h1>
-  <p class="sub">Last updated: 2026-10-11 · App: <code>uz.yashilvodiy.vodiy3d</code> · Publisher: MAGISTRAL TRANS QURILISH LLC</p>
-  <p>The game never touches your name, phone number, address, e-mail, precise location, contacts, photos or files.
-  Your game progress is stored only on your phone. There are no ads.</p>
+  <p class="sub">Last updated: 2026-10-12 · App: <code>uz.yashilvodiy.vodiy3d</code> · Publisher: MAGISTRAL TRANS QURILISH LLC</p>
+  <p>The game never touches your phone number, address, precise location, contacts, photos or files.
+  Your game progress is stored on your phone. There are no ads. Online play (from version 2.1) is optional and only starts when you tap
+  "Sign in with Google"; without it the game works fully offline.</p>
   <p>To improve the game, it sends anonymous usage statistics and crash reports to Google Firebase (Google Analytics for Firebase and Firebase Crashlytics, Google LLC), which processes them on our behalf:</p>
   <ul>
     <li>an anonymous identifier that Firebase creates when the game is installed (not a device identifier), used to count how many players come back on later days;</li>
@@ -77,6 +94,18 @@
     <li>only when the app crashes: a crash report with where it failed, the device model, the Android version and the game progress, used to find and fix bugs.</li>
   </ul>
   <p>This data is not linked to your name or any account, is sent over HTTPS, and is never sold, shared with anyone else or used for advertising.</p>
+  <p><strong>Online play (optional, Google sign-in).</strong> If you sign in with Google in the game's Online window, these are stored with Google Firebase
+  (Firebase Authentication and Cloud Firestore, Google LLC, servers in the European Union):</p>
+  <ul>
+    <li>an account ID made by Firebase Authentication, and your Google account's e-mail address and name, which Firebase Authentication keeps for signing in; the game never shows them to anyone;</li>
+    <li>your game progress (money, plots, upgrades, figs picked this week) as a cloud save, so the game survives a new phone;</li>
+    <li>your public valley: a farm number such as "Farmer 4821", your plots and upgrade levels, how green the valley is, money earned and figs picked in total. Other players see it on the leaderboard and can visit it;</li>
+    <li>the number of figs you picked each week, added to an anonymous community total for the weekly goal.</li>
+  </ul>
+  <h2 id="delete-en">Delete your account</h2>
+  <p>In the game, tap Online (next to Pause) → Account → Delete account. Your account, cloud save and public valley are deleted at once; the game on your phone stays.
+  If you no longer have the app, e-mail <a href="mailto:j.d.jaxongirov@gmail.com">j.d.jaxongirov@gmail.com</a> from your Google account's address and we delete it within 30 days.
+  Figs already added to the anonymous weekly total cannot be traced back to you and stay in it.</p>
   <p>To delete the data, clear the app's storage on the device, which also resets the random identifier. Analytics data is deleted
   automatically after 2 months and crash reports after 90 days; to have it removed sooner, e-mail <a href="mailto:j.d.jaxongirov@gmail.com">j.d.jaxongirov@gmail.com</a>.</p>
   <p>The game is not directed at children; the setting is a nuclear disaster, so it is rated for 13+.</p>
@@ -86,9 +115,10 @@
 
   <section id="ru">
   <h1>Green Valley — Политика конфиденциальности</h1>
-  <p class="sub">Последнее обновление: 2026-10-11 · Приложение: <code>uz.yashilvodiy.vodiy3d</code> · Издатель: MAGISTRAL TRANS QURILISH LLC</p>
-  <p>Игра не получает доступ к вашему имени, номеру телефона, адресу, e-mail, точному местоположению, контактам, фото и файлам.
-  Прогресс хранится только на вашем телефоне. Рекламы нет.</p>
+  <p class="sub">Последнее обновление: 2026-10-12 · Приложение: <code>uz.yashilvodiy.vodiy3d</code> · Издатель: MAGISTRAL TRANS QURILISH LLC</p>
+  <p>Игра не получает доступ к номеру телефона, адресу, точному местоположению, контактам, фото и файлам.
+  Прогресс хранится на вашем телефоне. Рекламы нет. Онлайн-игра (с версии 2.1) необязательна и включается, только если вы нажмёте
+  «Войти через Google»; без неё игра полностью работает офлайн.</p>
   <p>Чтобы улучшать игру, она отправляет анонимную статистику и отчёты о сбоях в Google Firebase (Google Analytics for Firebase и Firebase Crashlytics, Google LLC), который обрабатывает их от нашего имени:</p>
   <ul>
     <li>анонимный идентификатор, который Firebase создаёт при установке (не идентификатор устройства), чтобы считать, сколько игроков возвращаются в следующие дни;</li>
@@ -97,6 +127,18 @@
     <li>только при сбое приложения: отчёт о сбое (место ошибки, модель устройства, версия Android, прогресс в игре), чтобы находить и исправлять ошибки.</li>
   </ul>
   <p>Эти данные не связаны с вашим именем или аккаунтом, передаются по HTTPS и никогда не продаются, не передаются третьим лицам и не используются для рекламы.</p>
+  <p><strong>Онлайн-игра (необязательно, вход через Google).</strong> Если вы войдёте через Google в окне «Онлайн», в Google Firebase
+  (Firebase Authentication и Cloud Firestore, Google LLC, серверы в Евросоюзе) хранятся:</p>
+  <ul>
+    <li>идентификатор аккаунта Firebase Authentication, а также e-mail и имя вашего Google-аккаунта, которые Firebase Authentication хранит для входа; игра никому их не показывает;</li>
+    <li>прогресс игры (деньги, участки, улучшения, инжир за неделю) как сохранение в облаке;</li>
+    <li>ваша открытая долина: номер фермы вроде «Фермер 4821», участки и уровни улучшений, процент зелени, всего заработано денег и собрано инжира. Другие игроки видят её в рейтинге и могут зайти в гости;</li>
+    <li>сколько инжира вы собрали за неделю — добавляется к анонимному общему счёту цели недели.</li>
+  </ul>
+  <h2 id="delete-ru">Удаление аккаунта</h2>
+  <p>В игре нажмите «Онлайн» (рядом с паузой) → Аккаунт → «Удалить аккаунт». Аккаунт, облачное сохранение и открытая долина удаляются сразу; игра на телефоне остаётся.
+  Если приложения уже нет, напишите на <a href="mailto:j.d.jaxongirov@gmail.com">j.d.jaxongirov@gmail.com</a> с адреса вашего Google-аккаунта — удалим в течение 30 дней.
+  Инжир, уже добавленный к анонимному общему счёту, остаётся в нём.</p>
   <p>Удаление данных: очистите данные приложения на телефоне (идентификатор тоже сбросится). Данные аналитики удаляются автоматически
   через 2 месяца, отчёты о сбоях — через 90 дней; чтобы удалить их раньше, напишите на <a href="mailto:j.d.jaxongirov@gmail.com">j.d.jaxongirov@gmail.com</a>.</p>
   <p>Игра не предназначена для детей: в ней тема ядерной катастрофы, рейтинг 13+.</p>
