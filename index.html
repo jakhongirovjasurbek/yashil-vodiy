@@ -33,7 +33,7 @@
   <div class="card">
     <strong>Qisqacha:</strong> o'yin telefon raqami, manzil, aniq joylashuv, kontaktlar, rasmlar yoki fayllarga tegmaydi.
     O'yin progressi telefoningizda saqlanadi. O'yinni yaxshilash uchun anonim foydalanish statistikasi va ilova ishdan chiqqanda xato hisoboti yuboriladi. Reklama faqat o'zingiz tanlaganda chiqadi: "Video ko'rib sovg'a" tugmasini bossangizgina (pastda "Reklama" bo'limi).
-    Onlayn o'yin (2.1 versiyadan) ixtiyoriy: faqat "Google bilan kirish" tugmasini bossangiz, hisob identifikatori va o'yin progressi serverda saqlanadi. Kirmasangiz, o'yin to'liq oflayn ishlaydi.
+    2.6.1 versiyadan o'yin birinchi ochilganda ism va e-pochtasiz anonim hisob ochadi: unda vodiyingizning bulutdagi nusxasi, reytingdagi ochiq vodiy va haftalik maqsad saqlanadi. "Google bilan kirish" ixtiyoriy: u shu hisobni Google hisobingizga bog'laydi, shunda telefon almashsa ham vodiy qoladi.
   </div>
 
   <h2>To'planadigan ma'lumotlar</h2>
@@ -46,11 +46,11 @@
   </table>
   <p>Bu ma'lumotlar ismingiz yoki biror hisobingiz bilan bog'lanmaydi.</p>
 
-  <h2>Onlayn o'yin: Google bilan kirish (ixtiyoriy)</h2>
-  <p>Agar o'yindagi "Onlayn" oynasida Google bilan kirsangiz:</p>
+  <h2>Onlayn o'yin: anonim hisob va Google bilan kirish (ixtiyoriy)</h2>
+  <p>O'yin birinchi ochilganda Firebase Authentication anonim hisob yaratadi (faqat identifikator, ism va e-pochtasiz). O'yindagi "Onlayn" oynasida Google bilan kirsangiz, shu hisob Google hisobingizga bog'lanadi. Quyidagilar saqlanadi:</p>
   <table>
     <tr><th>Ma'lumot</th><th>Nima uchun</th></tr>
-    <tr><td>Hisob identifikatori (Firebase Authentication yaratadi), Google hisobingizning e-pochtasi va ismi (Firebase Authentication'da saqlanadi, o'yinda hech kimga ko'rsatilmaydi)</td><td>Hisobingizga kirish va saqlanishni sizga qaytarish uchun</td></tr>
+    <tr><td>Hisob identifikatori (Firebase Authentication yaratadi); Google bilan kirsangiz, Google hisobingizning e-pochtasi va ismi ham (Firebase Authentication'da saqlanadi, o'yinda hech kimga ko'rsatilmaydi)</td><td>Hisobingizga kirish va saqlanishni sizga qaytarish uchun</td></tr>
     <tr><td>O'yin progressi: pul, ochilgan bosqichlar, yaxshilashlar, haftada terilgan anjirlar</td><td>Bulutda saqlash: telefon almashsa ham o'yin yo'qolmaydi</td></tr>
     <tr><td>Ochiq vodiy: ferma raqami (masalan "Fermer 4821"), ochilgan bosqichlar va darajalar, vodiy necha foiz yashil, jami topilgan pul va terilgan anjirlar</td><td>Reyting va "qo'shnilar" ro'yxati: boshqa o'yinchilar vodiyingizni ko'rishi mumkin</td></tr>
     <tr><td>Haftada terilgan anjirlar soni (umumiy hisobga qo'shiladi, kimniki ekani saqlanmaydi)</td><td>Haftalik umumiy maqsad</td></tr>
@@ -80,7 +80,7 @@
   13 yoshgacha bo'lgan bolalardan ataylab ma'lumot to'planmaydi.</p>
 
   <h2 id="delete">Ma'lumotni va hisobni o'chirish</h2>
-  <p><strong>Onlayn hisob:</strong> o'yinda Pauza yonidagi "Onlayn" tugmasi → Hisob → "Hisobni o'chirish". Hisob, bulutdagi saqlanish va ochiq vodiy darhol o'chiriladi; telefondagi o'yin qoladi.
+  <p><strong>Onlayn hisob (anonim yoki Google):</strong> o'yinda "Menyu" → "Onlayn" → Hisob → "Hisobni o'chirish". Hisob, bulutdagi saqlanish va ochiq vodiy darhol o'chiriladi; telefondagi o'yin qoladi.
   Ilovani o'chirib yuborgan bo'lsangiz, <a href="mailto:j.d.jaxongirov@gmail.com">j.d.jaxongirov@gmail.com</a> manziliga Google hisobingiz e-pochtasidan yozing — 30 kun ichida o'chiramiz.
   Haftalik umumiy anjir soniga qo'shilgan hissa kimniki ekani saqlanmagani uchun u qoladi.</p>
   <p><strong>Qurilmada:</strong> Sozlamalar → Ilovalar → Green Valley → Xotirani tozalash. Shunda progress va anonim identifikator o'chadi.
@@ -97,8 +97,8 @@
   <h1>Green Valley — Privacy Policy</h1>
   <p class="sub">Last updated: 2026-10-16 · App: <code>uz.yashilvodiy.vodiy3d</code> · Publisher: MAGISTRAL TRANS QURILISH LLC</p>
   <p>The game never touches your phone number, address, precise location, contacts, photos or files.
-  Your game progress is stored on your phone. Ads appear only when you choose them: a rewarded video plays only after you tap a "watch a video" button (see <a href="#ads-en">Ads</a>). Online play (from version 2.1) is optional and only starts when you tap
-  "Sign in with Google"; without it the game works fully offline.</p>
+  Your game progress is stored on your phone. Ads appear only when you choose them: a rewarded video plays only after you tap a "watch a video" button (see <a href="#ads-en">Ads</a>). From version 2.6.1 the game opens an anonymous account (no name, no e-mail) the first time it starts:
+  it keeps a cloud copy of your valley, your public valley on the leaderboards and your part in the weekly goal. Signing in with Google is optional and links that account to your Google account, so the valley survives a new phone.</p>
   <p>To improve the game, it sends anonymous usage statistics and crash reports to Google Firebase (Google Analytics for Firebase and Firebase Crashlytics, Google LLC), which processes them on our behalf:</p>
   <ul>
     <li>an anonymous identifier that Firebase creates when the game is installed (not a device identifier), used to count how many players come back on later days;</li>
@@ -108,10 +108,10 @@
   </ul>
   <p>This data is not linked to your name or any account, is sent over HTTPS, and is never sold, shared with anyone else or used for advertising.
   The only other service that receives data is Google AdMob, for the rewarded videos you choose to watch (see <a href="#ads-en">Ads</a>).</p>
-  <p><strong>Online play (optional, Google sign-in).</strong> If you sign in with Google in the game's Online window, these are stored with Google Firebase
+  <p><strong>Online play (anonymous account, optional Google sign-in).</strong> Firebase Authentication makes an anonymous account the first time the game starts; if you sign in with Google in the game's Online window, it is linked to your Google account. These are stored with Google Firebase
   (Firebase Authentication and Cloud Firestore, Google LLC, servers in the European Union):</p>
   <ul>
-    <li>an account ID made by Firebase Authentication, and your Google account's e-mail address and name, which Firebase Authentication keeps for signing in; the game never shows them to anyone;</li>
+    <li>an account ID made by Firebase Authentication; if you sign in with Google, also your Google account's e-mail address and name, which Firebase Authentication keeps for signing in; the game never shows them to anyone;</li>
     <li>your game progress (money, plots, upgrades, figs picked this week) as a cloud save, so the game survives a new phone;</li>
     <li>your public valley: a farm number such as "Farmer 4821", your plots and upgrade levels, how green the valley is, money earned and figs picked in total. Other players see it on the leaderboard and can visit it;</li>
     <li>the number of figs you picked each week, added to an anonymous community total for the weekly goal.</li>
@@ -124,7 +124,7 @@
   You can reset or delete the advertising ID in your phone's settings (Settings → Privacy → Ads). How Google uses data:
   <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. Video rewards do not affect the leaderboards.</p>
   <h2 id="delete-en">Delete your account</h2>
-  <p>In the game, tap Online (next to Pause) → Account → Delete account. Your account, cloud save and public valley are deleted at once; the game on your phone stays.
+  <p>In the game, tap Menu → Online → Account → Delete account (anonymous or Google account). Your account, cloud save and public valley are deleted at once; the game on your phone stays.
   If you no longer have the app, e-mail <a href="mailto:j.d.jaxongirov@gmail.com">j.d.jaxongirov@gmail.com</a> from your Google account's address and we delete it within 30 days.
   Figs already added to the anonymous weekly total cannot be traced back to you and stay in it.</p>
   <p>To delete the data, clear the app's storage on the device, which also resets the random identifier. Analytics data is deleted
@@ -138,8 +138,8 @@
   <h1>Green Valley — Политика конфиденциальности</h1>
   <p class="sub">Последнее обновление: 2026-10-16 · Приложение: <code>uz.yashilvodiy.vodiy3d</code> · Издатель: MAGISTRAL TRANS QURILISH LLC</p>
   <p>Игра не получает доступ к номеру телефона, адресу, точному местоположению, контактам, фото и файлам.
-  Прогресс хранится на вашем телефоне. Реклама появляется только по вашему выбору: видео с наградой открывается, лишь когда вы нажмёте кнопку «посмотреть видео» (см. <a href="#ads-ru">Реклама</a>). Онлайн-игра (с версии 2.1) необязательна и включается, только если вы нажмёте
-  «Войти через Google»; без неё игра полностью работает офлайн.</p>
+  Прогресс хранится на вашем телефоне. Реклама появляется только по вашему выбору: видео с наградой открывается, лишь когда вы нажмёте кнопку «посмотреть видео» (см. <a href="#ads-ru">Реклама</a>). С версии 2.6.1 при первом запуске игра создаёт анонимный аккаунт (без имени и e-mail):
+  в нём хранятся облачная копия вашей долины, открытая долина в рейтинге и вклад в цель недели. Вход через Google необязателен: он привязывает этот аккаунт к вашему Google-аккаунту, и долина сохранится при смене телефона.</p>
   <p>Чтобы улучшать игру, она отправляет анонимную статистику и отчёты о сбоях в Google Firebase (Google Analytics for Firebase и Firebase Crashlytics, Google LLC), который обрабатывает их от нашего имени:</p>
   <ul>
     <li>анонимный идентификатор, который Firebase создаёт при установке (не идентификатор устройства), чтобы считать, сколько игроков возвращаются в следующие дни;</li>
@@ -149,10 +149,10 @@
   </ul>
   <p>Эти данные не связаны с вашим именем или аккаунтом, передаются по HTTPS и никогда не продаются, не передаются третьим лицам и не используются для рекламы.
   Ещё данные получает только Google AdMob — для видео с наградой, которые вы сами решили посмотреть (см. <a href="#ads-ru">Реклама</a>).</p>
-  <p><strong>Онлайн-игра (необязательно, вход через Google).</strong> Если вы войдёте через Google в окне «Онлайн», в Google Firebase
+  <p><strong>Онлайн-игра (анонимный аккаунт, вход через Google по желанию).</strong> При первом запуске Firebase Authentication создаёт анонимный аккаунт; если вы войдёте через Google в окне «Онлайн», он привяжется к вашему Google-аккаунту. В Google Firebase
   (Firebase Authentication и Cloud Firestore, Google LLC, серверы в Евросоюзе) хранятся:</p>
   <ul>
-    <li>идентификатор аккаунта Firebase Authentication, а также e-mail и имя вашего Google-аккаунта, которые Firebase Authentication хранит для входа; игра никому их не показывает;</li>
+    <li>идентификатор аккаунта Firebase Authentication; если вы вошли через Google — также e-mail и имя вашего Google-аккаунта, которые Firebase Authentication хранит для входа; игра никому их не показывает;</li>
     <li>прогресс игры (деньги, участки, улучшения, инжир за неделю) как сохранение в облаке;</li>
     <li>ваша открытая долина: номер фермы вроде «Фермер 4821», участки и уровни улучшений, процент зелени, всего заработано денег и собрано инжира. Другие игроки видят её в рейтинге и могут зайти в гости;</li>
     <li>сколько инжира вы собрали за неделю — добавляется к анонимному общему счёту цели недели.</li>
@@ -165,7 +165,7 @@
   Рекламный идентификатор можно сбросить или удалить в настройках телефона (Настройки → Конфиденциальность → Реклама). Как Google использует данные:
   <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. Награды за видео не влияют на рейтинги.</p>
   <h2 id="delete-ru">Удаление аккаунта</h2>
-  <p>В игре нажмите «Онлайн» (рядом с паузой) → Аккаунт → «Удалить аккаунт». Аккаунт, облачное сохранение и открытая долина удаляются сразу; игра на телефоне остаётся.
+  <p>В игре нажмите «Меню» → «Онлайн» → Аккаунт → «Удалить аккаунт» (анонимный или Google-аккаунт). Аккаунт, облачное сохранение и открытая долина удаляются сразу; игра на телефоне остаётся.
   Если приложения уже нет, напишите на <a href="mailto:j.d.jaxongirov@gmail.com">j.d.jaxongirov@gmail.com</a> с адреса вашего Google-аккаунта — удалим в течение 30 дней.
   Инжир, уже добавленный к анонимному общему счёту, остаётся в нём.</p>
   <p>Удаление данных: очистите данные приложения на телефоне (идентификатор тоже сбросится). Данные аналитики удаляются автоматически
