@@ -28,7 +28,7 @@
 
   <section id="uz">
   <h1>Green Valley — Maxfiylik siyosati</h1>
-  <p class="sub">Oxirgi yangilanish: 2026-10-16 · Ilova: <code>uz.yashilvodiy.vodiy3d</code> · Nashriyot: "MAGISTRAL TRANS QURILISH" MCHJ</p>
+  <p class="sub">Oxirgi yangilanish: 2026-10-18 · Ilova: <code>uz.yashilvodiy.vodiy3d</code> · Nashriyot: "MAGISTRAL TRANS QURILISH" MCHJ</p>
 
   <div class="card">
     <strong>Qisqacha:</strong> o'yin telefon raqami, manzil, aniq joylashuv, kontaktlar, rasmlar yoki fayllarga tegmaydi.
@@ -58,6 +58,15 @@
   <p>Boshqa o'yinchilar faqat ferma raqami va vodiyingizni ko'radi; ismingiz va e-pochtangiz hech kimga ko'rsatilmaydi.
   Ma'lumotlar Google Firebase (Firebase Authentication va Cloud Firestore, Google LLC) serverlarida, Yevropa Ittifoqida saqlanadi.</p>
 
+  <h2 id="purchases">Xaridlar va o'yinchilar bozori</h2>
+  <p>O'yin ichidagi xaridlarni Google Play qabul qiladi: karta yoki to'lov ma'lumotlaringiz bizga kelmaydi va biz ularni ko'rmaymiz.
+  Google Play bizga faqat qaysi mahsulot sotib olinganini va xarid tokenini (xaridning raqamli kvitansiyasi) beradi; o'yin uni telefoningizda saqlaydi.
+  "Cheksiz bozor joyi" kabi o'yinchilar bozoriga ta'sir qiladigan xaridlarda o'yin shu tokenni serverimizga (Google Cloud Functions, Google LLC, Yevropa Ittifoqi) yuboradi;
+  server uni Google Play orqali tekshiradi, hisobingizga "sotib olingan" belgisini qo'yadi va tokenning o'zini emas, undan olingan qaytarib bo'lmaydigan kodni (SHA-256 xesh) saqlaydi, shunda bitta xarid ikki hisobda ishlatilmaydi.</p>
+  <p>O'yinchilar bozorida mahsulot qo'ysangiz yoki sotib olsangiz, serverda shu savdo saqlanadi: ferma raqamingiz, mahsulot, soni, narxi va vaqti. Boshqa o'yinchilar faqat ferma raqami va lotni ko'radi.
+  Hisobni o'chirsangiz (pastda "Ma'lumotni va hisobni o'chirish"), ochiq lotlaringiz yopiladi, savdo hisoblagichlari, xabarlar va "sotib olingan" belgilari o'chiriladi.
+  Tugagan savdolar yozuvi va ishlatilgan xarid kodlari esa endi hech kimga bog'lanmaydigan hisob identifikatori bilan qoladi: ular boshqa o'yinchilarning savdosi va bitta xaridni qayta ishlatishning oldini olish uchun kerak.</p>
+
   <h2 id="ads">Reklama (mukofotli video)</h2>
   <p>O'yinda faqat mukofotli video bor: u o'zingiz to'q sariq "▶" tugmasini bosgandagina ochiladi (masalan, sovg'ani ikki barobar olish uchun). Majburiy reklama yo'q, har joyda videosiz yo'l ham bor, kuniga ko'pi bilan 8 ta.
   Videolarni Google AdMob (Google LLC) ko'rsatadi. Buning uchun AdMob quyidagilarni oladi:</p>
@@ -72,7 +81,7 @@
   Video mukofotlari reytingga ta'sir qilmaydi.</p>
 
   <h2>Ma'lumot kimga boradi</h2>
-  <p>Faqat Google xizmatlariga: Google Firebase (Google Analytics for Firebase, Firebase Crashlytics, Firebase Authentication va Cloud Firestore) va mukofotli video uchun Google AdMob (Google LLC). Firebase ma'lumotni bizning nomimizdan qayta ishlaydi. Ma'lumot boshqa hech kimga berilmaydi va
+  <p>Faqat Google xizmatlariga: Google Firebase (Google Analytics for Firebase, Firebase Crashlytics, Firebase Authentication, Cloud Firestore va Cloud Functions), xaridlar uchun Google Play va mukofotli video uchun Google AdMob (Google LLC). Firebase ma'lumotni bizning nomimizdan qayta ishlaydi. Ma'lumot boshqa hech kimga berilmaydi va
   sotilmaydi; o'yin statistikasi (Firebase) reklama uchun ishlatilmaydi. Barcha so'rovlar HTTPS orqali shifrlangan holda uzatiladi.</p>
 
   <h2>Bolalar</h2>
@@ -95,7 +104,7 @@
 
   <section id="en">
   <h1>Green Valley — Privacy Policy</h1>
-  <p class="sub">Last updated: 2026-10-16 · App: <code>uz.yashilvodiy.vodiy3d</code> · Publisher: MAGISTRAL TRANS QURILISH LLC</p>
+  <p class="sub">Last updated: 2026-10-18 · App: <code>uz.yashilvodiy.vodiy3d</code> · Publisher: MAGISTRAL TRANS QURILISH LLC</p>
   <p>The game never touches your phone number, address, precise location, contacts, photos or files.
   Your game progress is stored on your phone. Ads appear only when you choose them: a rewarded video plays only after you tap a "watch a video" button (see <a href="#ads-en">Ads</a>). From version 2.6.1 the game opens an anonymous account (no name, no e-mail) the first time it starts:
   it keeps a cloud copy of your valley, your public valley on the leaderboards and your part in the weekly goal. Signing in with Google is optional and links that account to your Google account, so the valley survives a new phone.</p>
@@ -116,6 +125,12 @@
     <li>your public valley: a farm number such as "Farmer 4821", your plots and upgrade levels, how green the valley is, money earned and figs picked in total. Other players see it on the leaderboard and can visit it;</li>
     <li>the number of figs you picked each week, added to an anonymous community total for the weekly goal.</li>
   </ul>
+  <h2 id="purchases-en">Purchases and the players' market</h2>
+  <p>In-app purchases are handled by Google Play: we never receive or see your card or payment details. Google Play tells the game only which product was bought and gives a purchase token (a digital receipt), which the game keeps on your phone.
+  For purchases that affect the players' market, such as "Unlimited Market Space", the game sends that token to our server (Google Cloud Functions, Google LLC, in the European Union). The server checks it with Google Play, marks the product as bought on your account and keeps a one-way code made from the token (a SHA-256 hash, not the token itself), so one purchase cannot unlock several accounts.</p>
+  <p>When you list or buy goods on the players' market, the server keeps the trade: your farm number, the product, the quantity, the price and the time. Other players see only the farm number and the listing.
+  When you delete your account (see <a href="#delete-en">Delete your account</a>), your open listings are closed and your trade counters, messages and bought-product marks are deleted.
+  Records of finished trades and the codes of used purchases stay, with an account ID that no longer belongs to anyone: other players' trades depend on them, and they stop one purchase being used again.</p>
   <h2 id="ads-en">Ads (rewarded video)</h2>
   <p>The game has rewarded videos only. One plays only when you tap an orange "▶" button, for example to double a gift. There are no forced ads, every reward also has a way without a video, and there are at most 8 videos a day.
   The videos come from Google AdMob (Google LLC), which receives the device's advertising ID (Android advertising ID), the device model and Android version, the IP address and approximate location,
@@ -136,7 +151,7 @@
 
   <section id="ru">
   <h1>Green Valley — Политика конфиденциальности</h1>
-  <p class="sub">Последнее обновление: 2026-10-16 · Приложение: <code>uz.yashilvodiy.vodiy3d</code> · Издатель: MAGISTRAL TRANS QURILISH LLC</p>
+  <p class="sub">Последнее обновление: 2026-10-18 · Приложение: <code>uz.yashilvodiy.vodiy3d</code> · Издатель: MAGISTRAL TRANS QURILISH LLC</p>
   <p>Игра не получает доступ к номеру телефона, адресу, точному местоположению, контактам, фото и файлам.
   Прогресс хранится на вашем телефоне. Реклама появляется только по вашему выбору: видео с наградой открывается, лишь когда вы нажмёте кнопку «посмотреть видео» (см. <a href="#ads-ru">Реклама</a>). С версии 2.6.1 при первом запуске игра создаёт анонимный аккаунт (без имени и e-mail):
   в нём хранятся облачная копия вашей долины, открытая долина в рейтинге и вклад в цель недели. Вход через Google необязателен: он привязывает этот аккаунт к вашему Google-аккаунту, и долина сохранится при смене телефона.</p>
@@ -157,6 +172,12 @@
     <li>ваша открытая долина: номер фермы вроде «Фермер 4821», участки и уровни улучшений, процент зелени, всего заработано денег и собрано инжира. Другие игроки видят её в рейтинге и могут зайти в гости;</li>
     <li>сколько инжира вы собрали за неделю — добавляется к анонимному общему счёту цели недели.</li>
   </ul>
+  <h2 id="purchases-ru">Покупки и рынок игроков</h2>
+  <p>Покупки в игре принимает Google Play: данные вашей карты и оплаты к нам не попадают, и мы их не видим. Google Play сообщает игре только, какой товар куплен, и выдаёт токен покупки (цифровой чек), который игра хранит на телефоне.
+  Для покупок, влияющих на рынок игроков, например «Безлимитное место на рынке», игра отправляет этот токен на наш сервер (Google Cloud Functions, Google LLC, Евросоюз). Сервер проверяет его через Google Play, отмечает товар как купленный в вашем аккаунте и хранит не сам токен, а необратимый код из него (хеш SHA-256), чтобы одну покупку нельзя было использовать в нескольких аккаунтах.</p>
+  <p>Когда вы выставляете или покупаете товар на рынке игроков, сервер хранит сделку: номер фермы, товар, количество, цену и время. Другие игроки видят только номер фермы и лот.
+  При удалении аккаунта (см. <a href="#delete-ru">Удаление аккаунта</a>) ваши открытые лоты закрываются, счётчики торговли, сообщения и отметки о покупках удаляются.
+  Записи о завершённых сделках и коды использованных покупок остаются с идентификатором аккаунта, который больше ни с кем не связан: от них зависят сделки других игроков, и они не дают использовать одну покупку повторно.</p>
   <h2 id="ads-ru">Реклама (видео с наградой)</h2>
   <p>В игре только видео с наградой. Оно запускается, только когда вы нажмёте оранжевую кнопку «▶», например чтобы удвоить подарок. Принудительной рекламы нет, любую награду можно получить и без видео, не больше 8 видео в день.
   Видео показывает Google AdMob (Google LLC). Он получает рекламный идентификатор устройства (Android advertising ID), модель устройства и версию Android, IP-адрес и примерное местоположение,
